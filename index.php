@@ -38,7 +38,7 @@
     <main id="container-section">
 
         <!-- PRIMEIRA CATEGORIA: relatos das pessoas  -->
-        <section class="container">
+        <section class="container" id="1">
             <figure>
 
                 <div class="text" data-aos="zoom-in-down">
@@ -91,6 +91,11 @@
 
             <!-- Botão para ir pro curso -->
             <button  class="btn btn3"> O Curso </button>
+
+            
+            <button class="btn-buy" onclick="window.location.href='#1' ">
+                <i class="fas fa-angle-double-up"></i>
+            </button>
         </section>
     
     </main>
