@@ -1,0 +1,144 @@
+/* configuracão do container ativo: grande escala */
+.container-active
+{
+    height: 205vh;
+    text-align: center;
+}
+
+/* configuracão da imagem quando o container está ativo */
+.container-active img
+{
+    filter: blur(0px);
+}
+
+.container-active .text
+{
+    top: 34vh;
+}
+
+.container-active .btn
+{
+    bottom: 5%;
+}
+
+/* ------------------------------ */
+
+/* primeiro conteudo: RELATOS */
+.first-content
+{
+    font-size: 3rem;
+}
+
+/* ------------------------------ */
+
+/* segundo conteudo: CONTEUDOS A SEREM ABORDADOS */
+.second-content
+{
+    font-size: 3rem;
+    background-color: ;
+    color: white;
+}
+
+#div-content
+{
+    margin-top: 20%;
+    padding: 3% 5%;
+}
+
+#div-content h1
+{
+    font-size: 10.2rem;
+}
+
+#div-content #sub
+{
+    font-size: 7.2rem;
+}
+
+#div-content #desc
+{
+    margin-top: 5%;
+    font-size: 5rem;
+}
+
+.carousel1 img
+{
+    width: 300px;
+    height: 350px;
+    padding: 5%;
+}
+
+.carousel1
+{
+    margin-top: 10%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#content-curso
+{
+    padding: 0% 10% 0 10%;
+
+    grid-template-columns: 1fr 1fr;
+
+    font-size: 4.5rem;
+
+    text-align: left;
+}
+
+#content-curso h1
+{
+    margin-bottom: 5%;
+}
+
+
+
+
+
+/* ------------------------------ */
+
+/* terceiro conteudo: ACESSO AO CURSO  */
+/* .third-content
+{
+} */
+
+/* conteudo segundo container */
+/* 
+
+<div id="div-content" data-aos="fade-down">   
+<h1> Makes Perfeitas.. </h1>
+<p id="sub">..no alcance de um clique!</p>
+
+<p id="desc"> Aqui você vai aprender a ter maquiagens 
+    lindas com um conteúdo super didático, simples
+    divertido e intuitivo. Vamos dar uma olhadinha:
+</p>
+
+<div class="carousel1" data-aos="fade-down">
+    <img src="img/m1.jpg" alt="">
+    <img src="img/m2.jpg" alt="">
+    <img src="img/m3.jpg" alt="">
+</div>
+</div>
+
+<ul id="content-curso" data-aos="fade-down">
+
+    <h1> Veremos no curso:</h1>
+    <li> Tipos de Pincéis </li>
+    <li> Corretivo e seus tons</li>
+    <li> Bases e seus tons</li> 
+    <li> Pó: Os diferentes tipos</li> 
+    <li> Contornos </li>
+    <li> Blush e seus tons</li>                  
+    <li> Iluminadores</li>
+    <li> Delineados</li>
+    <li> Batons e tons</li>
+    <li> Sombrancelha </li>
+    <li> Olho </li>
+
+    <li> Delineados</li>
+    <li> Batons e tons</li>
+    <li> Sombrancelha </li>
+    <li> aaa </li>
+</ul> */

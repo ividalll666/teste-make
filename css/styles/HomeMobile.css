@@ -1,0 +1,147 @@
+/* reset da página */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------ */
+
+/* raiz */
+:root
+{
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --cor-primaria:  #FCE4EC;
+    --cor-secundaria: #e69db5;
+    --cor-terciaria: #D3658A ;
+    --cor-quarternaria:  #C12A5D;
+    --cor-quintenaria: rgb(139, 26, 66);
+}
+
+/* Rolamento Suave caso precise */
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* configuracão básica da foto */
+img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* configuracão básico de video */
+video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* configiracão  */
+#container-section
+{
+    display: block;
+
+
+    width:100%;
+    height: 100vh;
+}
+
+/* ------------------------------ */
+
+/* configuracão do container geral */
+.container
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: var(--cor-quintenaria);
+}
+
+/* configuracão das fotos em geral */
+figure
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* configuracão da foto: blur  */
+figure img
+{
+    z-index: -1;
+    filter: blur(2.5px);
+}
+
+/* configuracão geral dos textos-titulo dos containers */
+.text
+{
+    position: absolute;
+    top: 15%;
+
+    padding: 1%;
+    width: 100%;
+
+    color: white;
+    background-color: var(--cor-quarternaria);
+
+    z-index: 1;
+    text-align: center;
+    font-size: 5.3rem;
+}
+
+
+/* configuracão do botão em geral */
+.btn
+{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 90vh);
+    
+    
+    width: 40%;
+    padding: 1.5%;
+
+    background-color: var(--cor-quarternaria);
+    border: 0px solid black;
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.btn-buy
+{
+    
+    position: absolute;
+    top: 0%;
+    right: 5%;
+
+    clip-path: circle(35%);
+
+    transform: translate(0%, 90vh);
+
+
+    width: 45px;
+    padding: 1.5%;
+
+    background-color: var(--cor-quarternaria);
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+
+    z-index: 10;
+}
+
