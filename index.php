@@ -13,6 +13,7 @@
     <!-- CSS da secão dos Relatos -->
 
     <!-- CSS da secão do conteúdo -->
+    <link rel="stylesheet" href="css/styles/ConteudoMobile.css">
 
     <!-- CSS da secão de compra do curso -->
 
@@ -35,7 +36,7 @@
 <body>
 
     <!-- MAIN: Conteúdo que armazena as categorias (secoes) do site -->
-    <main id="container-section">
+    <main id="container-section" class="home-show">
 
         <!-- PRIMEIRA CATEGORIA: relatos das pessoas  -->
         <section class="container" id="1">
@@ -59,7 +60,7 @@
         </section>
 
         <!-- SEGUNDA CATEGORIA: Onde será armazenado informacões sobre o curso -->
-        <section class="container">
+        <section class="container" id="2">
             <figure>
 
                 <div class="text" data-aos="zoom-in-down">
@@ -98,6 +99,47 @@
             </button>
         </section>
     
+    </main>
+
+    <main id="container-conteudo" class="conteudo-hide">
+            
+        <div id="div-content" data-aos="fade-down">   
+            <h1> Makes Perfeitas.. </h1>
+            <p id="sub">..no alcance de um clique!</p>
+            
+            <p id="desc"> Aqui você vai aprender a ter maquiagens 
+                lindas com um conteúdo super didático, simples
+                divertido e intuitivo. Vamos dar uma olhadinha:
+            </p>
+            
+            <div class="carousel1" data-aos="fade-down">
+                <img src="img/m1.jpg" alt="">
+                <img src="img/m2.jpg" alt="">
+                <img src="img/m3.jpg" alt="">
+            </div>
+        </div>
+        
+        <ul id="content-curso" data-aos="fade-down">
+        
+            <h1> Veremos no curso:</h1>
+            <li> Tipos de Pincéis </li>
+            <li> Corretivo e seus tons</li>
+            <li> Bases e seus tons</li> 
+            <li> Pó: Os diferentes tipos</li> 
+            <li> Contornos </li>
+            <li> Blush e seus tons</li>                  
+            <li> Iluminadores</li>
+            <li> Delineados</li>
+            <li> Batons e tons</li>
+            <li> Sombrancelha </li>
+            <li> Olho </li>
+        
+            <li> Delineados</li>
+            <li> Batons e tons</li>
+            <li> Sombrancelha </li>
+            <li> aaa </li>
+        </ul> 
+
     </main>
 
     <!-- CDN do JS Query -->
