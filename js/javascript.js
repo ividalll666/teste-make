@@ -1,13 +1,8 @@
 window.onload = function(){
+    
+
 const toggle1 = document.querySelector('.btn1');
 let box1 = document.getElementById('1');
-
-const toggle2 = document.querySelector('.btn2');
-let box2 = document.getElementById('2');
-
-const toggle3 = document.querySelector('.btn3');
-let box3 = document.getElementById('3');
-
 
 toggle1.addEventListener("click", function()
 {
@@ -23,18 +18,37 @@ toggle1.addEventListener("click", function()
     }
 })
 
+
+const toggle2 = document.querySelector('.btn2');
+let homestatus = document.getElementById('container-section');
+
+let conteudostatus = document.getElementById('container-conteudo');
+
 toggle2.addEventListener("click", function()
 {
-    if(box2.classList.contains('container-active'))
+    if( homestatus.classList.contains('home-show'))
     {
-        box2.classList.remove('container-active');
+        // Esconderá a HOME
+        homestatus.classList.remove('home-show');
+        homestatus.classList.add('home-hide');
+        setTimeout(function(){
+            homestatus.style.display = 'none';
+        }, 1005)
+
+        setTimeout(function(){
+            conteudostatus.classList.remove('conteudo-hide');
+            conteudostatus.classList.add('conteudo-show');
+            window.location.href = "#top";
+        }, 1006)
     }
     else 
     {
-        box2.classList.add('container-active');
-        setTimeout(function(){window.location.href = "#2"}, 500)
+        alert('erro.')
     }
 })
+
+const toggle3 = document.querySelector('.btn3');
+let box3 = document.getElementById('3');
 
 toggle3.addEventListener("click", function()
 {
