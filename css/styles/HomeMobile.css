@@ -51,8 +51,6 @@ video
 /* configiracão  */
 #container-section
 {
-    display: block;
-
     width:100%;
     height: 100vh;
 }
@@ -149,15 +147,25 @@ figure img
     z-index: 10;
 }
 
+
+/* Mostrar a home */
 .home-show
 {
     animation: 1s com-opacidade forwards ease-in ;
+    display: block;
 }
 
+/* Ocultar a Home */
 .home-hide
 {
     animation: 1s sem-opacidade forwards ease-out ;
 }
+
+.home-shutdown
+{
+    display: none;
+}
+
 
 @keyframes com-opacidade
 {
