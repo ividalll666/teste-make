@@ -18,13 +18,18 @@
     --cor-secundaria: #e69db5;
     --cor-terciaria: #D3658A ;
     --cor-quarternaria:  #C12A5D;
-    --cor-quintenaria: rgb(139, 26, 66);
+    --cor-quintenaria:  #8b1a42;
 }
 
 /* Rolamento Suave caso precise */
 html
 {
     scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: var(--cor-quintenaria);
 }
 
 /* configuracão básica da foto */
@@ -47,7 +52,6 @@ video
 #container-section
 {
     display: block;
-
 
     width:100%;
     height: 100vh;
@@ -145,3 +149,36 @@ figure img
     z-index: 10;
 }
 
+.home-show
+{
+    animation: 1s com-opacidade forwards ease-in ;
+}
+
+.home-hide
+{
+    animation: 1s sem-opacidade forwards ease-out ;
+}
+
+@keyframes com-opacidade
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes sem-opacidade
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
