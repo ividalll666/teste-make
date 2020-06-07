@@ -9,6 +9,8 @@
 
     <!-- CSS da página inicial - Mobile -->
     <link rel="stylesheet" href="css/styles/HomeMobile.css">
+    <!-- javascript da página home -->
+    <script src="js/jshome/home.js"></script>
 
     <!-- CSS da secão dos Relatos -->
 
@@ -26,7 +28,7 @@
     <!-- Aos library -->
     <link rel="stylesheet" href="css/aos/aos.css">
 
-    <script src="js/javascript.js"></script>
+    
 
     <title> Maquiagem </title>
 </head>
@@ -101,7 +103,7 @@
     
     </main>
 
-    <main id="container-conteudo" class="conteudo-hide">
+    <main id="container-conteudo" class="content-shutdown">
             
         <div id="div-content" data-aos="fade-down">   
             <h1> Makes Perfeitas.. </h1>
@@ -140,6 +142,11 @@
             <li> aaa </li>
         </ul> 
 
+        <div class = "btn-bar">
+            <button class=" btn-content btn-home"> <i class="fas fa-home"></i> </button>
+            <button class=" btn-content btn-preview">  <i class="fas fa-user-check"></i>  </button>
+            <button class=" btn-content btn-review"> <i class="fas fa-shopping-bag"></i> </button>
+        </div>
     </main>
 
     <!-- CDN do JS Query -->
