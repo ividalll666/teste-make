@@ -4,8 +4,8 @@ window.onload = function(){
     const toggleConteudo = document.querySelector('.btn2');
     const toggleHome = document.querySelector('.btn-home');
 
-    let homestatus = document.getElementById('container-section');
-    let conteudostatus = document.getElementById('container-conteudo');
+    let homestatus = document.getElementById('container-section-mobile');
+    let conteudostatus = document.getElementById('container-conteudo-mobile');
 
 
     // ----- PÁGINA HOME: SELECÃO DE CATEGORIA
