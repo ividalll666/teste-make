@@ -22,6 +22,31 @@
         --cor-terciaria: #D3658A ;
         --cor-quarternaria:  #C12A5D;
         --cor-quintenaria:  #8b1a42;
+
+        --gradient-one: #78CFF6 ;
+        --gradient-two: #7CACF7;
+        --gradient-three: #808AF8;
+        --gradient-four: rgb(211, 101, 196) ;
+        --gradient-five: #D3658A;
+
+        --gradient: linear-gradient(
+            -60deg,
+            var(--gradient-one),
+            var(--gradient-two),
+            var(--gradient-three),
+            var(--gradient-four),
+            var(--gradient-five)
+        );
+
+        --gradient-destaque: linear-gradient(
+            -60deg,
+            var(--cor-primaria),
+            var(--gradient-one),
+            var(--cor-primaria),
+            var(--cor-secundaria),
+            var(--cor-primaria),
+            var(--gradient-three)
+        );
     }
 
     .desktop
@@ -37,7 +62,7 @@
 
     body
     {
-        background-color: var(--cor-quintenaria);
+        background-color: var(--cor-primaria);
     }
 
     /* configuracão básica da foto */
@@ -102,15 +127,38 @@
         position: absolute;
         top: 15%;
 
-        padding: 1%;
+        padding: 3% 0 3% 0;
         width: 100%;
 
-        color: white;
-        background-color: var(--cor-quarternaria);
+        color: var(--gradient-five);
+        background-color: var(--cor-primaria);
 
         z-index: 1;
         text-align: center;
         font-size: 5.3rem;
+    }
+
+    .destaque
+    {
+        background-image: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 400%;
+        animation: 2.5s gradient infinite alternate;
+    }
+
+    @keyframes gradient 
+    {
+        0%
+        {
+            background-position: right;
+        }
+
+        100%
+        {
+            background-position: left;
+        }
     }
 
 
@@ -126,9 +174,9 @@
         width: 40%;
         padding: 1.5%;
 
-        background-color: var(--cor-quarternaria);
+        background-color: var(--cor-primaria);
         border: 0px solid black;
-        color: white;
+        color: var(--gradient-five);
 
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 3.5rem;

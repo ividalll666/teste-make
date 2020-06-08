@@ -1,0 +1,185 @@
+@media (min-width: 1025px)
+{
+
+    .mobile
+    {
+        display: none;
+    }
+
+    *
+    {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    /* raiz */
+    :root
+    {
+        font-size: 1vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        --cor-primaria:  #FCE4EC;
+        --cor-secundaria: #e69db5;
+        --cor-terciaria: #D3658A ;
+        --cor-quarternaria:  #C12A5D;
+        --cor-quintenaria:  #8b1a42;
+
+        --gradient-one: #78CFF6 ;
+        --gradient-two: #7CACF7;
+        --gradient-three: #808AF8;
+        --gradient-four: rgb(211, 101, 196) ;
+        --gradient-five: #D3658A;
+
+        --gradient: linear-gradient(
+            -60deg,
+            var(--gradient-one),
+            var(--gradient-two),
+            var(--gradient-three),
+            var(--gradient-four),
+            var(--gradient-five)
+        );
+
+        --gradient-destaque: linear-gradient(
+            -60deg,
+            var(--cor-primaria),
+            var(--gradient-one),
+            var(--cor-primaria),
+            var(--cor-secundaria),
+            var(--cor-primaria),
+            var(--gradient-three)
+        );
+    }
+
+
+    main
+    {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    html
+    {
+        scroll-behavior: smooth;
+    }
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+    }
+
+    /* conteudo geral */
+    #container-conteudo-desktop
+    {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        padding: 3%;
+        background-color: var(--cor-primaria);
+    }
+
+    /* configuracão da div do carousel */
+    #section-carousel
+    {
+        width: 50%;
+        height: 100%;
+        background-color: var(--cor-terciaria);
+        /* border-radius: 15px; */
+        padding: 3%;
+    }
+
+    /* configuracão do carousel em si */
+    #section-carousel .carousel1
+    {
+        width: 100%;
+        height: 100%;
+        background: none;
+        filter: drop-shadow(0 0 20px var(--cor-quintenaria));
+
+    }
+
+    /* configuracão da imagem do carousel */
+    #section-carousel .carousel1 img
+    {
+        width: 100%;
+        height: 75vh;
+        cursor: grab;
+
+    }
+
+    /*  configuracão da parte do conteúdo  */
+
+    #section-desc-content
+    {
+        height: 100%;
+        width: 100%;
+        padding: 3%;
+        background-color: var(--cor-terciaria);
+        color: white;
+        margin-left: 3%;
+    }
+
+    .div-content h1
+    {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+    }
+
+    .div-content p
+    {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+    }
+
+    
+
+    #content-curso
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.3rem;
+        column-gap: 25%;
+        padding-left: 5%;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+
+    #content-1
+    {
+        grid-column: 1/2;
+    }
+
+    #content-2
+    {
+        grid-column: 2/3;
+    }
+
+    #espiadinha
+    {
+        background-image: var(--gradient-destaque);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 400%;
+
+        animation: 1.5s gradient infinite alternate;
+    }
+
+    @keyframes gradient 
+    {
+        0%
+        {
+            background-position: right;
+        }
+
+        100%
+        {
+            background-position: left;
+        }
+    }
+}
