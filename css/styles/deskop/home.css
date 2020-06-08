@@ -1,0 +1,206 @@
+@media (min-width: 1025px)
+{
+
+    .mobile
+    {
+        display: none;
+    }
+
+    *
+    {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    /* raiz */
+    :root
+    {
+        font-size: 1vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        --cor-primaria:  #FCE4EC;
+        --cor-secundaria: #e69db5;
+        --cor-terciaria: #D3658A ;
+        --cor-quarternaria:  #C12A5D;
+        --cor-quintenaria:  #8b1a42;
+
+        --gradient-one: #78CFF6 ;
+        --gradient-two: #7CACF7;
+        --gradient-three: #808AF8;
+        --gradient-four: rgb(211, 101, 196) ;
+        --gradient-five: #D3658A;
+
+        --gradient: linear-gradient( 
+            -60deg, 
+            var(--gradient-one),
+            var(--gradient-two),
+            var(--gradient-three),
+            var(--gradient-four),
+            var(--gradient-five)
+        );
+    }
+
+
+    main
+    {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+    }
+
+    #container-section-desktop
+    {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        height: 100vh;
+
+        background-color: var(--cor-primaria);
+
+        padding: 2% 0% 2%;
+    }
+
+    #title-home
+    {
+        grid-column: 1/2;
+    }
+
+    #container-title
+    {        
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-terciaria);
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+
+    #makes
+    {
+        font-size: 10rem;
+    }
+
+    #silabas
+    {
+        font-size: 10rem;
+        background-image: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 400%;
+
+        animation: 3s gradient infinite alternate;
+    }
+
+    @keyframes gradient 
+    {
+        0%
+        {
+            background-position: right;
+        }
+
+        100%
+        {
+            background-position: left;
+        }
+    }
+
+    .silaba
+    {
+        font-size: 12rem;
+        text-transform: uppercase;
+    }
+
+    #container-title h1
+    {
+        width: 100%;
+        font-size: 8rem;
+        line-height: 120%;
+    }
+
+
+    #pic-home
+    {
+        grid-column: 2/3;
+    }
+
+    #container-pics
+    {
+        display: flex;
+        background-color: var(--cor-terciaria);
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 0px 0px 15px;
+        padding: 3%;
+    }
+
+    #pic1
+    {
+        object-position: left;
+    }
+
+    .container
+    {
+        flex-basis: 30%;
+        background-color: hotpink;
+        margin: 3%;
+        height: 100%;
+    }
+
+    .container figure
+    {
+        height: 100%;
+        box-shadow: 0px 0px 25px var(--cor-quintenaria);
+        transition: .5s cubic-bezier(0.77, 0, 0.175, 1);
+        position: relative;
+        overflow-y: hidden;
+    }
+
+    .subtitle-pic
+    {
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+        transform: translate(0%, 300%);
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: 1.2rem;
+        color: white;
+        z-index: 10;
+    }
+
+    .arrowdown
+    {
+        margin-top: 5%;
+        text-align: center;
+
+    }
+    .container figure:hover
+    {
+        transform: scale(1.056);
+        box-shadow: 0px 0px 45px var(--cor-quintenaria);
+        cursor: pointer;
+    }
+
+    .container figure:hover img
+    {
+        filter: blur(1px) brightness(60%);
+    }
+
+    .container figure:hover .subtitle-pic
+    {
+        transform: translate(0%, -300%);
+    }
+
+}
