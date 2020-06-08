@@ -8,14 +8,18 @@
     <script src="https://kit.fontawesome.com/782e4cfd7d.js" crossorigin="anonymous"></script>
 
     <!-- CSS da página inicial - Mobile -->
-    <link rel="stylesheet" href="css/styles/HomeMobile.css">
+    <link rel="stylesheet" href="css/styles/mobile/HomeMobile.css">
+
     <!-- javascript da página home -->
     <script src="js/jshome/home.js"></script>
+
+    <!-- página inicial desktop -->
+    <link rel="stylesheet" href="css/styles/deskop/home.css">
 
     <!-- CSS da secão dos Relatos -->
 
     <!-- CSS da secão do conteúdo -->
-    <link rel="stylesheet" href="css/styles/ConteudoMobile.css">
+    <link rel="stylesheet" href="css/styles/mobile/ConteudoMobile.css">
 
     <!-- CSS da secão de compra do curso -->
 
@@ -37,20 +41,19 @@
 
 <body>
 
-    <!-- MAIN: Conteúdo que armazena as categorias (secoes) do site -->
-    <main id="container-section" class="home-show">
+    <!-- MAIN: VERSÃO MOBILE ------------------------------------------------------------------------------>
+    <main id="container-section-mobile" class="home-show mobile">
 
         <!-- PRIMEIRA CATEGORIA: relatos das pessoas  -->
         <section class="container" id="1">
             <figure>
-
                 <div class="text" data-aos="zoom-in-down">
                     <h1> Sua opinião importa.</h1>
                     <p> Veja a comprovação de quem fez. </p>
                 </div>
 
                 <!-- Imagem sobre maquiagem -->
-                <img src="img/foto5.jpg" alt="">
+                <img id="pic1" src="img/foto5.jpg" alt="">
             </figure>
 
             <!-- Botão para ir pros relatos -->
@@ -103,7 +106,79 @@
     
     </main>
 
-    <main id="container-conteudo" class="content-shutdown">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <!-- MAIN: VERSÃO desktop ------------------------------------------------------------------------------>
+    <main id="container-section-desktop" class="desktop">
+
+        <section id="title-home">
+            <div id="container-title">
+                <h1>  <span id="makes"> Makes</span> 
+                        <span id="silabas"> 
+                            <i class="silaba">per</i> <br> 
+                            <i class="silaba">fei</i> <br> 
+                            <i class="silaba">tas.</i> 
+                        </span>
+                </h1>
+            </div>
+        </section>
+
+        <section id="pic-home">
+
+            <div id="container-pics">
+
+                <!-- PRIMEIRA CATEGORIA: relatos das pessoas  -->
+                <article class="container" id="1">
+                    <figure>
+                        <div class="subtitle-pic">
+                            <h1> Sua Opinião Importa.</h1>
+                            <p> Veja a de quem adquiriu. </p>
+                            <p class="arrowdown"><i class="fas fa-angle-double-down"></i></p>
+                        </div>
+
+                        <!-- Imagem sobre maquiagem -->
+                        <img id="pic1" src="img/foto5.jpg" alt="">
+                    </figure>
+                </article>
+
+                <!-- SEGUNDA CATEGORIA: Onde será armazenado informacões sobre o curso -->
+                <article class="container" id="2">
+                    <figure>
+                        <div class="subtitle-pic">
+                            <h1> Fique Magnífica</h1>
+                            <p> Clique e veja o conteúdo</p>
+                            <p class="arrowdown"> <i class="fas fa-angle-double-down"></i></p>
+                        </div>
+
+
+                        <!-- Imagem da menina do curso -->
+                        <img src="img/foto.jpg" alt="">
+                    </figure>
+                </article>
+                
+                <!-- TERCEIRA CATEGORIA: Onde será discutido precos e redirecionamento pra hotmart -->
+                <article class="container" id="3">
+                    <figure>  
+                        <div class="subtitle-pic">
+                            <h1> Veja como Assinar</h1>
+                            <p> Precos, perguntas e mais.</p>
+                            <p class="arrowdown"><i class="fas fa-angle-double-down"></i></p>
+                        </div>             
+                        <!-- Imagem sobre o curso -->
+                        <img src="img/foto3.jpg" alt="">
+                    </figure>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- CONTEÚDO VERSÃO MOBILE -->
+    <main id="container-conteudo-mobile" class="content-shutdown mobile">
             
         <div id="div-content" data-aos="fade-down">   
             <h1> Makes Perfeitas.. </h1>
