@@ -199,8 +199,8 @@
             <h1> Makes  <span class="destaque"> Perfeitas.. </span> </h1>
             <p id="sub">..no alcance de um clique!</p>
             
-            <p id="desc"> Aqui você vai aprender a ter maquiagens 
-                lindas com um conteúdo super didático, simples
+            <p id="desc"> Aqui você vai aprender a auto maquiar-se 
+                de forma simples, com um conteúdo super didático,
                 divertido e intuitivo. Vamos dar uma olhadinha:
             </p>
             
@@ -263,9 +263,9 @@
 
                 <h1> Uma <span id="espiadinha">espiadinha</span> no conteúdo: </h1>
                 
-                <p id="desc"> Aqui você vai aprender a ter maquiagens 
-                    lindas com um conteúdo super didático, simples
-                    divertido e intuitivo. Vamos dar uma olhadinha:
+                <p id="desc"> Aqui você vai aprender a auto maquiar-se 
+                de forma simples, com um conteúdo super didático,
+                divertido e intuitivo. Vamos dar uma olhadinha:
                 </p>
 
                 <h1> Você terá acesso..</h1>        
